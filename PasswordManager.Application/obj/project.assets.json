@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Application\\PasswordManager.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Application\\PasswordManager.Application.csproj",
       "projectName": "PasswordManager.Application",
-      "projectPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Application\\PasswordManager.Application.csproj",
+      "projectPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Application\\PasswordManager.Application.csproj",
       "packagesPath": "C:\\Users\\Rukin\\.nuget\\packages\\",
-      "outputPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Application\\obj\\",
+      "outputPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rukin\\AppData\\Roaming\\NuGet\\NuGet.Config",

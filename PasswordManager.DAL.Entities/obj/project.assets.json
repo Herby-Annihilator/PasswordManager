@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj",
       "projectName": "PasswordManager.DAL.Entities",
-      "projectPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj",
+      "projectPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj",
       "packagesPath": "C:\\Users\\Rukin\\.nuget\\packages\\",
-      "outputPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.Entities\\obj\\",
+      "outputPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rukin\\AppData\\Roaming\\NuGet\\NuGet.Config",

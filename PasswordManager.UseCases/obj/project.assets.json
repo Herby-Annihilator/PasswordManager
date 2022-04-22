@@ -150,11 +150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.UseCases\\PasswordManager.UseCases.csproj",
+      "projectUniqueName": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.UseCases\\PasswordManager.UseCases.csproj",
       "projectName": "PasswordManager.UseCases",
-      "projectPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.UseCases\\PasswordManager.UseCases.csproj",
+      "projectPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.UseCases\\PasswordManager.UseCases.csproj",
       "packagesPath": "C:\\Users\\Rukin\\.nuget\\packages\\",
-      "outputPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.UseCases\\obj\\",
+      "outputPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.UseCases\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rukin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -171,17 +171,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Application\\PasswordManager.Application.csproj": {
-              "projectPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Application\\PasswordManager.Application.csproj"
+            "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Application\\PasswordManager.Application.csproj": {
+              "projectPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Application\\PasswordManager.Application.csproj"
             },
-            "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Core\\PasswordManager.Core.csproj": {
-              "projectPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Core\\PasswordManager.Core.csproj"
+            "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Core\\PasswordManager.Core.csproj": {
+              "projectPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Core\\PasswordManager.Core.csproj"
             },
-            "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj": {
-              "projectPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj"
+            "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj": {
+              "projectPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj"
             },
-            "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.Repositories\\PasswordManager.DAL.Repositories.csproj": {
-              "projectPath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.Repositories\\PasswordManager.DAL.Repositories.csproj"
+            "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.Repositories\\PasswordManager.DAL.Repositories.csproj": {
+              "projectPath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.Repositories\\PasswordManager.DAL.Repositories.csproj"
             }
           }
         }

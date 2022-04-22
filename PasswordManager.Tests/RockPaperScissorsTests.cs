@@ -90,7 +90,7 @@ namespace PasswordManager.Tests
     /// </summary>
     public class SimpleRockPaperScissorsGameRealization : RockPaperScissors
     {
-        public override Guid GetAccessToken()
+        public override Guid Authorize()
         {
             return Guid.Empty;
         }

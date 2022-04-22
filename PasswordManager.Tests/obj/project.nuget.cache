@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q5donDv6JeDDoVuznxaulRNY3n0rpiswN7Lze6zIaCYAGjUBcCVSP6kuy7wlKwk3fwiXP1pkPbAcDuiX+Nta4g==",
+  "dgSpecHash": "vyN0UdnXYx3guiC57otqdhQTMHamTyw8IQiObOTXUhGQbPQ+/6lJRvZJUWiI1mp6MovKBXAbhtLsgrLU1HLKww==",
   "success": true,
-  "projectFilePath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Tests\\PasswordManager.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Tests\\PasswordManager.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rukin\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Rukin\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

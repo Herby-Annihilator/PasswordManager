@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qPSjdZ5faCIk9y9A0YxtdSBOmomFamFS/Y0WF171WkExZMFypT75gGxW5BN7JHTVPq+Wdss7KBh/sG3UyId+aQ==",
+  "dgSpecHash": "M6z5TDsAt/aoYPIh1GjFNd77mgans/QDAMs0K/z88m8ZKbghCgRK34be3FglTyoY72Clw1k+MlyMcLrzujJQkQ==",
   "success": true,
-  "projectFilePath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.Core\\PasswordManager.Core.csproj",
+  "projectFilePath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.Core\\PasswordManager.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

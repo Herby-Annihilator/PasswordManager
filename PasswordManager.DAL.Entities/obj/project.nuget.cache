@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q9LgyoPk7wVNQNG+o+pH5n7QU4eHNne3cwFxhLOAB86GXpmPsoAZCvUCGTP8WJQlggHHkRhuMrdlEAhpe9Q+1A==",
+  "dgSpecHash": "IuHQb3rQjyJ9xWW6I4T8FQcYScZ6Xb0fqVAkYcnM4MWLcYjKT4KpwRYgKI/0hmlVf8HBB3OKCJJR/pKmWowMMw==",
   "success": true,
-  "projectFilePath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj",
+  "projectFilePath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.Entities\\PasswordManager.DAL.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WcCdUB12uaZnQJijtI0CQ88+U42PMQwjHAziEwRiXxnUBe/djChSWxwzXkLRapBeQONss2FMBPWrT8R3El0qOg==",
+  "dgSpecHash": "nz9CA/OVWuXGrFQO1xDngVxzYE4j2Q/n8mmiT4lOQP/T2sVMM+x+bJBpOErNHs1RrdCAJU62UukXBht87+geFg==",
   "success": true,
-  "projectFilePath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.DAL.EFCore\\PasswordManager.DAL.EFCore.csproj",
+  "projectFilePath": "C:\\Users\\Rukin\\source\\repos\\PasswordManager\\PasswordManager.DAL.EFCore\\PasswordManager.DAL.EFCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rukin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rukin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
