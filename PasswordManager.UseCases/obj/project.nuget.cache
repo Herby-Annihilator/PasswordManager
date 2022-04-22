@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kH8VkzlklpXwx36vA3HHd+mY39R37Bau+zExCj0BYAddQIO5L3MWdskSY8ZEhXD5LioAy0/7xzWYZC99tHlTNQ==",
+  "success": true,
+  "projectFilePath": "D:\\cloned_repos\\PI8X\\QA_Lab4_RukinDanil\\PasswordManager\\PasswordManager.UseCases\\PasswordManager.UseCases.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rukin\\.nuget\\packages\\npgsql\\5.0.10\\npgsql.5.0.10.nupkg.sha512",
+    "C:\\Users\\Rukin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
