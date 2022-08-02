@@ -1,0 +1,68 @@
+.record_image{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.record_points{
+    text-align: right;
+    margin-right: 25px;
+    margin-left: -50px;
+}
+
+.record_points_values{
+    text-align: left;
+    margin-left: 25px;
+}
+
+.footer{
+    height: 50px;
+    background-color: #414141;
+}
+
+.information_label{
+    text-align: center;
+    color: azure;
+}
+
+.tool_feed_item{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    height: 250px;
+    align-items: center;
+}
+.tool_feed_item p{
+    margin-top: 55px;
+}
+
+.tool_feed{
+    background-color: #CCCCCC;
+    display: flex;
+    height: 200px;
+}
+
+.other{
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.record_main_info{
+    margin-right: 5px;
+    margin-left: 5px;
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/styles/sidebars.css" rel="stylesheet"/>
+    <link href="../css/main.css" rel="stylesheet"/>
+    <link href="../css/PasswodGenerator.css" rel="stylesheet"/>
+    <title>PasswordManager</title>
+</head>
+<body>
+    <header>
+        <!--Меню выбора действия-->
+        <div class="strip_menu d-flex justify-content-between">
+            <div class="d-flex btn-group">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Базы
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Создать</a></li>
+                      <li><a class="dropdown-item" href="#">Редактировать</a></li>
+                      <li><a class="dropdown-item" href="#">Удалить</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Группы
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Создать</a></li>
+                      <li><a class="dropdown-item" href="#">Редактировать</a></li>
+                      <li><a class="dropdown-item" href="#">Удалить</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Записи
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Создать</a></li>
+                      <li><a class="dropdown-item" href="#">Редактировать</a></li>
+                      <li><a class="dropdown-item" href="#">Удалить</a></li>
+                    </ul>
+                  </div>
+            </div>
+
+            <div class="user_actions">
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="../icon-192.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                      <li><a class="dropdown-item" href="#">Мой профиль</a></li>
+                      <li><a class="dropdown-item" href="#">Настройки</a></li>
+                      <li><a class="dropdown-item" href="#">Еще что-нибудь</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Выйти</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <!--Лента инструментов как в MS Word-->
+        <div class="tool_feed">
+            <div class="tool_feed_item d-flex flex-column align-items-center">
+                <div class="buttons mb-10">
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#groupCreating">
+                        <img src="../images/add_90924.svg" height="40" width="40" alt="add"/>
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        <img src="../images/edit.svg" height="40" width="40" alt="add"/>
+                    </button>
+                    <button class="btn btn-outline-danger">
+                        <img src="../images/delete.svg" height="40" width="40" alt="add"/>
+                    </button>
+                </div>
+                <p>Группы</p>
+            </div>
+            <div class="d-flex" style="height: 200px;">
+              <div class="vr"></div>
+            </div>
+            <div class="tool_feed_item d-flex flex-column align-items-center">
+                <div class="buttons">
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#recordCreating">
+                        <img src="../images/add_90924.svg" height="40" width="40" alt="add"/>
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        <img src="../images/edit.svg" height="40" width="40" alt="add"/>
+                    </button>
+                    <button class="btn btn-outline-danger">
+                        <img src="../images/delete.svg" height="40" width="40" alt="add"/>
+                    </button>
+                </div>
+                <p>Записи</p>
+            </div>
+            <div class="d-flex" style="height: 200px;">
+              <div class="vr"></div>
+            </div>
+            <div class="tool_feed_item d-flex flex-column align-items-center">
+                <div class="buttons align-self-center">
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#databaseCreating">
+                        <img src="../images/add_90924.svg" height="40" width="40" alt="add"/>
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        <img src="../images/edit.svg" height="40" width="40" alt="add"/>
+                    </button>
+                    <button class="btn btn-outline-danger">
+                        <img src="../images/delete.svg" height="40" width="40" alt="add"/>
+                    </button>
+                </div>
+                <p>Базы паролей</p>
+            </div>
+            <div class="d-flex" style="height: 200px;">
+              <div class="vr"></div>
+            </div>
+            <div class="other flex-fill flex-grow-1">
+              <div class="d-flex flex-fill flex-grow-1 justify-content-between">
+                <div class="d-flex flex-column">
+                  <button class="btn btn-outline-secondary mb-3" data-bs-toggle="modal" data-bs-target="#passwordGenerator">Генератор паролей</button>
+                  <button class="btn btn-outline-secondary">Мини-игра</button>
+                </div>
+                <div class="ms-5 d-flex align-items-start justify-content-center">
+                  <input type="text" size="50" placeholder="Начните вводить здесь" style="height: 35px;"/>
+                  <button class="btn btn-outline-secondary ms-1" style="height: 35px;">Найти</button>
+                </div>
+              </div>
+              <p class="align-self-center">Прочее</p>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="main">
+        <!--Панель со всеми элементами и группами-->
+        <section>
+            <div class="flex-shrink-0 p-3 bg-white" style="width: 280px; max-height: 610px;">
+                <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                  <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-5 fw-semibold">Навигация</span>
+                </a>
+                <ul class="list-unstyled ps-0 list-group scrollarea">
+                  <li class="mb-1 list-group-item border-0 border-0">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                      Базы
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded">Updates</a></li>
+                        <li><a href="#" class="link-dark rounded">Reports</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-1 list-group-item border-0">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                      Группы
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                        <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                        <li><a href="#" class="link-dark rounded">Annually</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-1 list-group-item border-0">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                      Записи
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New</a></li>
+                        <li><a href="#" class="link-dark rounded">Processed</a></li>
+                        <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                        <li><a href="#" class="link-dark rounded">Returned</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="border-top my-3"></li>
+                  <li class="mb-1 list-group-item border-0">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                      Настройки
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New...</a></li>
+                        <li><a href="#" class="link-dark rounded">Profile</a></li>
+                        <li><a href="#" class="link-dark rounded">Settings</a></li>
+                        <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+        </section>
+
+        <!--Панель со всеми записями в группе-->
+        <section>
+            <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;">
+                <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                  <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-5 fw-semibold">Записи в группе</span>
+                </a>
+                <div class="list-group list-group-flush border-bottom scrollarea">
+                  <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small>Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+            
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Название записи</strong>
+                      <small class="text-muted">Дата последнего доступа</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Краткое описание записи, несколько слов, чтобы пользователю было легче ориентироваться.</div>
+                  </a>
+                </div>
+              </div>
+        </section>
+
+        <!--Область с основной информацией по записи-->
+        <section class="record_main_info d-flex flex-column justify-content-center flex-grow-1">
+            <div class="record_image">
+                <img src="../icon-192.png" width="100" height="100" alt="Картинка записи"/>
+                <p>Название записи</p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="record_points">
+                    <p>Группа</p>
+                    <p>Адрес ресурса</p>
+                    <p>Имя пользователя</p>
+                    <p>Пароль</p>
+                    <p>Дата создания</p>
+                    <p>Дата последнего доступа</p>
+                    <p>Дата последнего изменения</p>
+                </div>
+                <div class="record_points_values">
+                    <p>Название группы</p>
+                    <p>https://www.figma/com</p>
+                    <p>UserName</p>
+                    <p>SecurePassword</p>
+                    <p>01.01.2000</p>
+                    <p>01.01.2000</p>
+                    <p>01.01.2000</p>
+                </div>
+            </div>
+            <div class="record_description">
+                <p>Описание</p>
+                <textarea style="width: 100%; max-width: 100%;" placeholder="Описание записи" maxlength="1000" rows="8"></textarea>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer d-flex align-items-end justify-content-center">
+            <p class="information_label">&copy;RukinStudio&trade;. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--Модальные окна-->
+
+
+<!-- Генератор паролей -->
+<div class="modal fade" id="passwordGenerator" tabindex="-1" aria-labelledby="passwordGeneratorLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="passwordGeneratorLabel">Генератор паролей</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal_container">
+      <div class="modal_password_length">
+          <p>Длина пароля</p>
+          <input type="text" size="20" placeholder="По умолчанию 8"/>
+      </div>
+      <div class="modal_register">
+          <p>Регистр</p>
+          <div>
+              <div class="modal_register_row">
+                  <div>
+                      <input type="checkbox" name="upper" id="upper"/>
+                      <label for="upper">Верхний</label>
+                  </div>
+                  <div>
+                      <label for="upperSymbolsCount">Число символов</label>
+                      <input type="text" size="20" placeholder="Например, 5"/>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div class="modal_register_row">
+                  <div>
+                      <input type="checkbox" name="lower" id="lower"/>
+                      <label for="lower">Нижний</label>
+                  </div>
+                  <div>
+                      <label for="lowerSymbolsCount">Число символов</label>
+                      <input type="text" size="20" placeholder="Например, 5"/>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal_digits_in_password">
+          <input type="checkbox" name="digitsInPassword" id="digitsInPassword"/>
+          <label for="digitsInPassword">Цифры в пароле</label>
+      </div>
+      <div class="modal_special_symbols">
+          <p>Специальные символы</p>
+          <input type="text" size="30" placeholder="Символы перечислять через пробел"/>
+      </div>
+      <div class="modal_btn_right">
+        <button type="button" class="btn btn-primary">Генерировать</button>
+      </div>
+      <div class="modal_result">
+          <label for="result">Результат</label>
+          <input type="text" name="result" id="result" size="70"/>
+      </div>
+      </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Создание/редактирование записи-->
+<div class="modal fade" id="recordCreating" tabindex="-1" aria-labelledby="recordCreatingLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="recordCreatingLabel">Создание/редактирование записи</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column text-end">
+          <div class="d-flex justify-content-between mb-3">
+            <label for="recordName">Название записи</label>
+            <input type="text" size="30" id="recordName"/>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label for="resourceAddress">Адрес ресурса</label>
+            <input type="text" size="30" id="resourceAddress"/>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label for="userName">Имя пользователя</label>
+            <input type="text" size="30" id="userName"/>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label for="password">Пароль</label>
+            <input type="text" size="30" id="password"/>
+          </div>  
+        </div>
+         <div class="d-flex justify-content-end mb-3">
+          <button type="button" class="btn btn-primary">Генератор</button>
+         </div>
+         <div class="d-flex flex-column text-end mb-3">
+          <div class="d-flex justify-content-between mb-3">
+            <label for="confirmPassword">Подтвердите пароль</label>
+            <input type="text" size="30" id="confirmPassword"/>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <label for="group">Группа</label>
+            <div class="d-flex justify-content-end">
+              <input type="text" size="30" id="group"/>
+              <button type="button" class="btn btn-primary ms-3">Выбрать</button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <label for="icon">Иконка</label>
+            <div class="d-flex justify-content-end">
+              <input type="text" size="30" id="icon"/>
+              <button type="button" class="btn btn-primary ms-3">Выбрать</button>
+            </div>
+          </div>
+          <div class="d-flex flex-column text-start">
+            <label for="recordDescription">Описание</label>
+            <textarea rows="7" id="recordDescription"></textarea>
+          </div>
+         </div>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Создание/редактирование группы-->
+<div class="modal fade" id="groupCreating" tabindex="-1" aria-labelledby="groupCreatingLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="groupCreatingLabel">Создание/редактирование группы</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column text-end">
+          <div class="d-flex justify-content-between mb-3">
+            <label for="groupdName">Название группы</label>
+            <input type="text" size="30" id="groupdName"/>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <label for="icon">Иконка</label>
+          <div class="d-flex justify-content-end">
+            <input type="text" size="30" id="icon"/>
+            <button type="button" class="btn btn-primary ms-3">Выбрать</button>
+          </div>
+        </div>
+        <div class="d-flex flex-column text-start">
+          <label for="records">Записи</label>
+          <textarea rows="7" id="records"></textarea>
+        </div>
+        <div class="d-flex justify-content-between mt-3 mb-3">
+          <div class="d-flex">
+            <button type="button" class="btn btn-secondary me-3">Очистить список</button>
+            <button type="button" class="btn btn-danger">Удалить</button>
+          </div>
+          <button type="button" class="btn btn-success">Добавить</button>
+        </div>
+        <div class="d-flex flex-column text-start">
+          <label for="recordDescription">Описание</label>
+          <textarea rows="7" id="recordDescription"></textarea>
+        </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Создание/редактирование базы паролей-->
+<div class="modal fade" id="databaseCreating" tabindex="-1" aria-labelledby="databaseCreatingLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="databaseCreatingLabel">Создание/редактирование базы паролей</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column text-end">
+          <div class="d-flex justify-content-between mb-3">
+            <label for="databaseName">Название базы паролей</label>
+            <input type="text" size="30" id="databaseName"/>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label class="me-3">Способ доступа</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Zero</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label for="databaseUserName">Имя пользователя</label>
+            <input type="text" size="30" id="databaseUserName"/>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label for="databaseMasterPassword">Мастер-пароль</label>
+            <input type="password" size="30" id="databaseMasterPassword"/>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label for="databaseMasterPasswordConfirm">Подтвердите пароль</label>
+            <input type="password" size="30" id="databaseMasterPasswordConfirm"/>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label class="me-3">Вариант мини-игры</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Zero</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <label class="me-3">Алгоритм шифрования</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Zero</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <label for="icon">Иконка</label>
+          <div class="d-flex justify-content-end">
+            <input type="text" size="30" id="icon"/>
+            <button type="button" class="btn btn-primary ms-3">Выбрать</button>
+          </div>
+        </div>
+        <div class="d-flex flex-column text-start">
+          <label for="recordDescription">Описание</label>
+          <textarea rows="7" id="recordDescription"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
